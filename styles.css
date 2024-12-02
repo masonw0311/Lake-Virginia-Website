@@ -308,3 +308,93 @@ body {
 .social-icon.twitter:hover {
     color: #1DA1F2; /* Twitter blue */
 }
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Event Calendar Styling */
+.event-calendar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-calendar h2 {
+    font-size: 24px;
+    color: #005eb8;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for the days of the week */
+    gap: 5px;
+    margin-top: 10px;
+}
+
+#calendar div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+#calendar div:hover {
+    background-color: #005eb8;
+    color: #ffffff;
+}
+
+#event-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Gradient Background Scrolling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #ffffff, #005eb8); /* White to blue gradient */
+    background-size: 200% 200%; /* Expands the gradient for smooth scrolling */
+    animation: gradient-scroll 8s infinite; /* Applies scrolling animation */
+    color: #333;
+}
+
+/* Gradient Animation */
+@keyframes gradient-scroll {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for visibility */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}

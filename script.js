@@ -22,6 +22,7 @@ async function getWeather() {
         const temperature = data.main.temp;
         const weatherDescription = data.weather[0].description;
         const icon = data.weather[0].icon;
+        
 
         // Update the DOM elements
         document.getElementById("temperature").textContent = `Temperature: ${temperature}°F`;

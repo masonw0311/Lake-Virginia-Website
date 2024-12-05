@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+header {
+    background-color: #005eb8; /* Rollins blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Main Image Section */
+.main-image img {
+    width: 100%;           
+    max-height: 400px;      
+    object-fit: cover;      /* Crop the image to fit within the height */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;               /* Space between navigation links */
+    background-color: #f0f0f0;
+    padding: 10px 0;         /* Top and bottom padding for the navbar */
+    margin: 20px 0;          /* Space above and below the navbar */
+    border-radius: 8px;      /* Rounded corners for the navbar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #005eb8;          /* Link color */
+    font-weight: bold;
+    padding: 8px 15px;       /* Padding for links to make them look like buttons */
+    border-radius: 4px;      /* Rounded corners for individual links */
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+}
+
+/* First info section */
+.economy-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-image {
+    width: 300px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.section-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Reverse layout for the second info section */
+.economy-section:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+/* Footer Navigation */
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 70px; /* Set width of the SVG container */
+    height: 70px; /* Set height of the SVG container */
+    color: #005eb8; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.social-icon:hover {
+    color: #004080; /* Darker blue on hover */
+}
+
+/* Individual Icon Colors (Optional) */
+.social-icon.instagram:hover {
+    color: #E1306C; /* Instagram pink */
+}
+
+.social-icon.linkedin:hover {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.social-icon.twitter:hover {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+

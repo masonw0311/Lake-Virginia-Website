@@ -91,15 +91,15 @@ header h1 {
     justify-content: space-between;
     padding: 20px;
     border-bottom: 1px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .economy-section:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .economy-section img {
-    width: 40%; /* Adjust the size of the image */
+    width: 40%; 
     height: auto;
     margin-right: 20px; /* Add spacing between the image and text */
     border-radius: 8px;
@@ -110,7 +110,7 @@ header h1 {
     margin-right: 0;
 }
 .economy-section:nth-of-type(2) .section-image {
-    margin-left: auto; /* Pushes the image to the right */
+    margin-left: auto; 
     margin-right: 0;
 }
 
@@ -121,20 +121,26 @@ header h1 {
 }
 
 .section-content h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
     color: #005eb8;
     text-align: center;
+}
+.section-content h1{
+    font-size: 1.2 smaller;
+    text-align: left;
+    color: #005eb8;
 }
 
 .section-content p {
     font-size: 1rem;
     line-height: 1.8;
     color: #555;
+    margin-bottom: 10px;
 }
 
 .section-content a {
-    color: #005eb8;
+    color: #1a4d79;
     text-decoration: none;
     font-weight: bold;
 }
